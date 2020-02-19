@@ -53,7 +53,6 @@ public class FavouritesViewModel extends AndroidViewModel {
         mFavs.setValue(newFavs);
     }
 
-
     void addFav(String url, long date) {
         SQLiteDatabase db = mFavHelper.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -67,7 +66,6 @@ public class FavouritesViewModel extends AndroidViewModel {
 
 
         List<Favourites> favourites = mFavs.getValue();
-
         ArrayList<Favourites> clonedFavs;
         if (favourites == null) {
             clonedFavs = new ArrayList<>();
